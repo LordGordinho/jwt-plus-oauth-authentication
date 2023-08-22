@@ -18,8 +18,8 @@
 
         <%= form_for(resource, as: resource_name, url: session_path(resource_name), html: { class: "grid gap-y-4" }) do |f| %>
           <div class="field">
-            <%= f.label :email, class: "block text-sm mb-2 dark:text-white" %>
-            <%= f.email_field :email, class: "py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400", autofocus: true, autocomplete: "email" %>
+            <%= f.label :email_or_username, class: "block text-sm mb-2 dark:text-white" %>
+            <%= f.text_field :email_or_username, class: "py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400", autofocus: true, autocomplete: "email" %>
           </div>
 
           <div class="field">
