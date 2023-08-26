@@ -10,16 +10,10 @@ default: &default
 
 development:
   <<: *default
-  username: r00t
-  password: 1amr00t
-  host: localhost
   database: jwt_plus_oauth_authentication_development
 
 test:
   <<: *default
-  username: r00t
-  password: 1amr00t
-  host: localhost
   database: jwt_plus_oauth_authentication_test
 
 production:

@@ -1,9 +1,12 @@
 Rails.application.routes.draw do
-  get 'home/index'
+  root to: 'home#index'
   devise_for :users
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
-  # Defines the root path route ("/")
-  # root "articles#index"
-  root to: "home#index"
+  namespace 'api' do
+    mount_devise_token_auth_for 'User', at: 'auth', controllers: {
+      sessions: 'api/auth/sessions'
+    }
+
+    resources :tests
+  end
 end
