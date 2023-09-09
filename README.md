@@ -1,5 +1,7 @@
 # Hybrid Ruby on Rails Application with Devise and devise_auth_token
 
+![imagem cover](https://raw.githubusercontent.com/LordGordinho/jwt-plus-oauth-authentication/master/app/assets/images/image_cover.png)
+
 This project is a hybrid application built in Ruby on Rails, utilizing the Devise and devise_auth_token gems for authentication management. The application is designed to provide a hybrid experience to users, offering authentication via both web interface and API. The primary goal is to showcase the integration of these gems and the flexibility of Rails in handling authentication across different contexts.
 
 ## Features
